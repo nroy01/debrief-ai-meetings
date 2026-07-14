@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Debrief — Privacy Policy</title>
+<style>
+  :root { --bg:#F7F4EE; --card:#FFFEFA; --ink:#211C15; --muted:#6b6357; --accent:#C2492A; --line:rgba(0,0,0,.08); }
+  @media (prefers-color-scheme: dark){ :root { --bg:#161410; --card:#211E18; --ink:#EFE9DE; --muted:#a79e90; --accent:#E2724F; --line:rgba(255,255,255,.10);} }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; background:var(--bg); color:var(--ink); line-height:1.6; }
+  .wrap { max-width:720px; margin:0 auto; padding:48px 22px 80px; }
+  .kicker { color:var(--accent); font-weight:700; letter-spacing:.12em; text-transform:uppercase; font-size:.78rem; }
+  h1 { font-family:Georgia,"Times New Roman",serif; font-size:2.4rem; margin:.15em 0 .1em; }
+  .tag { color:var(--muted); margin-top:0; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:20px 24px; margin:18px 0; box-shadow:0 10px 30px rgba(0,0,0,.05); }
+  h2 { font-family:Georgia,serif; font-size:1.3rem; margin:1.4em 0 .3em; }
+  h2:first-child { margin-top:0; }
+  p, li { color:var(--ink); }
+  .muted { color:var(--muted); }
+  a { color:var(--accent); text-decoration:none; font-weight:600; }
+  a:hover { text-decoration:underline; }
+  ul { padding-left:1.15em; }
+  li { margin:.3em 0; }
+  .lead { font-size:1.05rem; }
+  .pill { display:inline-block; background:color-mix(in srgb, var(--accent) 14%, transparent); color:var(--accent); font-weight:600; font-size:.8rem; padding:4px 11px; border-radius:999px; }
+  footer { color:var(--muted); font-size:.85rem; margin-top:32px; text-align:center; }
+  nav { margin-top:6px; font-size:.9rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="kicker">Debrief</p>
+  <h1>Privacy Policy</h1>
+  <p class="tag">Last updated: July 14, 2026</p>
+  <nav><a href="index.html">← Support</a></nav>
+
+  <div class="card">
+    <p class="lead" style="margin-top:0;">Debrief is built to be private by design. It has <strong>no account, no analytics, no tracking, and no ads</strong>. Your meetings stay on your device, and the developer does not collect, receive, or store any of your personal information.</p>
+  </div>
+
+  <h2>Information we collect</h2>
+  <p><strong>None.</strong> Debrief does not collect personal information. There are no user accounts, no sign-in, and no analytics or advertising SDKs. We have no servers that receive your data.</p>
+
+  <h2>How your data is handled</h2>
+  <ul>
+    <li><strong>On-device storage.</strong> Your meetings, transcripts, notes, action items, people, and projects are stored locally on your device. They are not uploaded to us.</li>
+    <li><strong>Microphone.</strong> When you choose to record a meeting, the microphone is used to capture audio for transcription. Audio is optionally saved on your device only if you enable “Keep the audio recording” in Settings.</li>
+    <li><strong>Speech recognition (transcription).</strong> Recordings are transcribed using Apple’s Speech framework. With “On-device only” enabled (the default), transcription happens entirely on your device. For some languages that lack an on-device model, Apple may process audio on Apple’s servers to transcribe it; this is handled by Apple under <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple’s Privacy Policy</a>. You can keep transcription on-device by leaving “On-device only” on.</li>
+    <li><strong>Optional AI debriefs (Anthropic).</strong> AI debriefs use a fully on-device engine by default. If you choose to add your own Anthropic API key in Settings, the meeting text you debrief is sent to Anthropic to generate the summary and action items. This happens under your own Anthropic account and is governed by <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Anthropic’s Privacy Policy</a>. The developer never receives or stores this content or your API key (your key is stored in your device’s Keychain). Meetings you mark <strong>Confidential</strong> can be kept on-device only.</li>
+    <li><strong>Reminders &amp; Calendar (optional).</strong> If you grant access, Debrief can create reminders from your action items and import upcoming calendar events. This data stays on your device and in your own Apple accounts; it is not sent to us.</li>
+    <li><strong>Notifications (optional).</strong> If you enable meeting reminders, Debrief schedules local notifications on your device. No push server is involved.</li>
+  </ul>
+
+  <h2>Data sharing</h2>
+  <p>We do not sell, rent, or share your data. The only time your content leaves your device is when <em>you</em> initiate it — for example, using your own Anthropic API key for AI debriefs, exporting your data, or sharing a follow-up message or reminder through the system share sheet.</p>
+
+  <h2>Your controls</h2>
+  <ul>
+    <li>Export all your data to a JSON file (Settings ▸ Data).</li>
+    <li>Delete all your data at any time (Settings ▸ Data), or delete the app to remove everything.</li>
+    <li>Keep transcription and AI on-device, and mark sensitive meetings Confidential.</li>
+  </ul>
+
+  <h2>Children’s privacy</h2>
+  <p>Debrief is not directed to children under 13 and does not knowingly collect information from them.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, we will update this page and revise the “Last updated” date above.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about privacy? Email <a href="mailto:neel.g.roy.games@gmail.com">neel.g.roy.games@gmail.com</a>.</p>
+  <p><span class="pill">Private by design · No tracking · No ads</span></p>
+
+  <footer>© 2026 Neel Roy · Debrief · <a href="index.html">Support</a></footer>
+</div>
+</body>
+</html>
